@@ -37,7 +37,7 @@ public class MyNativePlugin extends AbstractPlugin {
     public static class MyNativeScriptFactory implements NativeScriptFactory {
         @Override
         public ExecutableScript newScript(@Nullable Map<String, Object> params) {
-            return new MyNativeScript(fieldName, from, to);
+            return new MyNativeScript();
         }
     }
 
